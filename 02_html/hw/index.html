@@ -1,51 +1,72 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>L02 HW</title>
+    <meta charset="UTF-8">
+    <title>EPAM Frontend Lab L02 HW</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-      #content {
-        padding: 0 50px;
-      }
-    </style>
   </head>
   <body>
     <div id="wrapper">
       <div id="main">
         <div id="container">
           <div id="content" role="main">
-            <!-- text formating tags-->
+            <header>
+              <h1>HTML Elements</h1>
+              <p>
+                Below is just about everything you’ll need to style in the theme.
+                Check the source code to see the many embedded elements within
+                paragraphs.
+              </p>
+            </header>
+            <hr/>
             <section>
-              <header>
-                <h2 class="page-title">HTML Elements</h2>
-                <p>Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.</p>
-              </header>
-              <hr/>
               <h1>Heading 1</h1>
               <h2>Heading 2</h2>
               <h3>Heading 3</h3>
               <h4>Heading 4</h4>
               <h5>Heading 5</h5>
               <h6>Heading 6</h6>
-              <hr/>
-              <p>Lorem ipsum dolor sit amet, <a href="#">test link</a> adipiscing elit. <strong>This is strong.</strong> Nullam dignissim convallis est. Quisque aliquam. <em>This is emphasized.</em> Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. <cite>The New York Times</cite> (That’s a citation). <u>Underline.</u> Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
-           
-              <p><abbr title="Hyper Text Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. To copy a file type <kbd>COPY</kbd> <samp>filename</samp>.<del>Dinner's at 5:00</del> <ins>Let’s make that 7.</ins> This <s>text</s> has been struck.</p>
             </section>
             <hr/>
-            <!-- lists: unordered, ordered and description list -->
             <section>
-              <header>
-                <h2>List Types</h2>
-              </header>
+              <p>
+              <!-- href="#" is just a reference to the top of same page -->
+                Lorem ipsum dolor sit amet, <a href="#">test link</a> adipiscing
+                elit. <strong>This is strong.</strong>
+                Nullam dignissim convallis est. Quisque aliquam.
+                <em>This is emphasized.</em> Donec faucibus. Nunc iaculis
+                suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O.
+                Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt
+                nec, gravida vehicula, nisl. <cite>The New York Times</cite>
+                (That’s a citation). <u>Underline.</u> Maecenas ornare tortor.
+                Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+                Suspendisse quam sem, consequat at, commodo vitae, feugiat in,
+                nunc. Morbi imperdiet augue quis tellus.</p>
+              <p>
+                <abbr title="Hyper Text Markup Language">HTML</abbr> and
+                <abbr title="Cascading Style Sheets">CSS</abbr> are our tools.
+                Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae,
+                feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent
+                mattis, massa quis luctus fermentum, turpis mi volutpat justo,
+                eu volutpat enim diam eget metus. To copy a file type <kbd>COPY
+                <var>filename</var></kbd>. <del>Dinner's at 5:00</del>
+                <ins>Let’s make that 7. </ins> This <s>text</s> has been struck.
+              </p>
+            </section>
+            <hr/>
+            <section>
+              <h2>List Types</h2>
 
               <h3>Definition List</h3>
               <dl>
                 <dt>Definition List Title</dt>
                 <dd>This is a definition list division.</dd>
-
                 <dt>Definition</dt>
-                <dd>An exact statement or description of the nature, scope, or meaning of something: <dfn>our definition of what constitutes poetry.</dfn></dd>
+                <dd>
+                  An exact statement or description of the nature, scope, or
+                  meaning of something:
+                  <dfn>our definition of what constitutes poetry.</dfn>
+                </dd>
               </dl>
 
               <h3>Ordered List</h3>
@@ -73,61 +94,86 @@
               </ul>
             </section>
             <hr/>
-            <!-- Table -->
             <section>
               <h2>Table</h2>
               <table>
-                <!-- I have added a class 'entry-title', to change the font-family of thead elem, so that it looks like in the example-->
-                <thead class="entry-title">
+                <thead>
                   <tr>
-                    <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
+                    <th>Table Header 1</th>
+                    <th>Table Header 2</th>
+                    <th>Table Header 3</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+                    <td>Division 1</td>
+                    <td>Division 2</td>
+                    <td>Division 3</td>
                   </tr>
                   <tr>
-                    <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+                    <td>Division 1</td>
+                    <td>Division 2</td>
+                    <td>Division 3</td>
                   </tr>
                   <tr>
-                    <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+                    <td>Division 1</td>
+                    <td>Division 2</td>
+                    <td>Division 3</td>
                   </tr>
                 </tbody>
               </table>
             </section>
             <hr/>
-            <!-- preformatted text -->
             <section>
               <h2>Preformatted text</h2>
-              <p>Typographically, preformatted text is not the same thing as code. Sometimes, a faithful execution of the text requires preformatted text that may not have anything to do with code. Most browsers use Courier and that’s a good default — with one slight adjustment, Courier 10 Pitch over regular Courier for Linux users. For example:</p>                         
-<pre>“Beware the Jabberwock, my son!
+              <p>
+                Typographically, preformatted text is not the same thing as code.
+                Sometimes, a faithful execution of the text requires preformatted
+                text that may not have anything to do with code. Most browsers
+                use Courier and that’s a good default — with one slight adjustment,
+                Courier 10 Pitch over regular Courier for Linux users. For example:
+              </p>                         
+              <pre>
+“Beware the Jabberwock, my son!
  The jaws that bite, the claws that catch!
 Beware the Jubjub bird, and shun
- The frumious Bandersnatch!”</pre>
+ The frumious Bandersnatch!”
+              </pre>
+              <h3>Code</h3>
+              <p>
+                Code can be presented inline, like <code>&lt;?php
+                bloginfo('stylesheet_url'); ?&gt;</code>, or within a 
+                <code>&lt;pre&gt;</code> block. Because we have more specific
+                typographic needs for code, we’ll specify Consolas and Monaco
+                ahead of the browser-defined monospace font.
+              </p>
+              <pre>
+  #container {
+          float: left;
+          margin: 0 -240px 0 0;
+          width: 100%;
+  }
+              </pre>
             </section>
             <hr/>
-            <!-- HTML entities and computercode -->
-            <section>
-              <h2>Code</h2>
-              <p>Code can be presented inline, like <code>&lt;?php bloginfo('stylesheet_url'); ?&gt;</code>, or within a <code>&lt;pre&gt;</code> block. Because we have more specific typographic needs for code, we’ll specify Consolas and Monaco ahead of the browser-defined monospace font.</p>                          
-<pre><code>#container {
-  float: left;
-  margin: 0 -240px 0 0;
-  width: 100%;
-}
-</code></pre>                    
-            </section>
-            <hr/>
-            <!-- blockquote -->
             <section>
               <h2>Blockquotes</h2>
-              <p>Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
+              <p>
+                Let’s keep it simple. Italics are good to help set it off from
+                the body text. Be sure to style the citation.
+              </p>
               <blockquote cite="https://en.wikipedia.org/wiki/HAL_9000">
-                <p>Good afternoon, gentlemen. I am a HAL 9000 computer. I became operational at the H.A.L. plant in Urbana, Illinois on the 12th of January 1992. My instructor was Mr. Langley, and he taught me to sing a song. If you’d like to hear it I can sing it for you.</p>
+                <p>
+                  Good afternoon, gentlemen. I am a HAL 9000 computer. I became
+                  operational at the H.A.L. plant in Urbana, Illinois on the
+                  12th of January 1992. My instructor was Mr. Langley, and he
+                  taught me to sing a song. If you’d like to hear it I can sing
+                  it for you.
+                </p>
                 — <a href="https://en.wikipedia.org/wiki/HAL_9000">HAL 9000</a>
               </blockquote>
             </section>
+            <footer>And here’s a bit of trailing text.</footer>
           </div>
         </div>
       </div>
